@@ -1,0 +1,84 @@
+.overlap-item:hover {
+  transform: rotateY(180deg);
+}
+
+
+.back-view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+
+.back-view {
+  color: black;
+  background: white;
+  transform: rotatey(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.txt-anime {
+  animation: showtxt 2s 1;
+  position: relative;
+  z-index: 98;
+}
+
+
+@keyframes showtxt {
+  0% {
+    bottom: -20px;
+    opacity: 0;
+
+  }
+
+  60% {
+    opacity: 0;
+
+  }
+
+  100% {
+    bottom: 0px;
+
+  }
+
+}
+
+
+.food-z {
+  animation: show-heading 7s;
+  z-index: 99;
+}
+
+@keyframes show-heading {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1
+  }
+
+}
+
+.anime-btn {
+  animation: showup 3s 1;
+  position: relative;
+}
+
+@keyframes showup {
+  from {
+    bottom: -60px;
+
+  }
+
+  to {
+    bottom: 0px;
+  }
+}
