@@ -1,0 +1,96 @@
+.overlap-item:hover {
+  transform: rotateY(180deg);
+}
+
+
+.back-view {
+  position: absolute;
+  width: 101%;
+  height: 101%;
+  backface-visibility: hidden;
+}
+
+
+
+.back-view {
+  color: black;
+  background: white;
+  transform: rotatey(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.txt-anime {
+  animation: showtxt 1s 1;
+  position: relative;
+  z-index: 98;
+}
+
+
+@keyframes showtxt {
+  0% {
+    bottom: -10px;
+    opacity: 0;
+
+  }
+
+  60% {
+    opacity: 0;
+
+  }
+
+  100% {
+    bottom: 0px;
+
+  }
+
+}
+
+
+
+
+.anime-btn {
+  
+  animation: showup 5s 1;
+  position: relative;
+}
+
+@keyframes showup {
+  0% {
+    bottom: -180px;
+    opacity: 0;
+
+  }
+
+  50%{
+    opacity: 0;
+  }
+
+  70%{
+    opacity: .5;
+  }
+
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+/* namu animation */
+
+.manu-clon{
+  height: 263px;
+  width: 366px;
+  background-color: #84b813;
+  position: absolute;
+  opacity: 0;
+  
+}
+
+ .manu-clon:hover{
+opacity: .7;
+}
