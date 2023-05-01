@@ -23,539 +23,614 @@
 
 <body>
 
-    <div class="header">
-
-        <!--navigation bar-->
-        <div class="navbar">
-            <div class="mylogo">
-                <img class="logo" src="https://megaone.acrothemes.com/restaurant/img/logo.png" alt="">
+    <!--navigation bar-->
+    <div class="navbar sticky">
+        <div class="mylogo">
+            <img class="logo" src="https://megaone.acrothemes.com/restaurant/img/logo2.png" alt="">
 
 
-                <div class="burger" onclick="showNavbar()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <div class="burger" onclick="showNavbar()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="navlink t" id="a">
-                <p class="back" onclick="hideNavbar()">×</p>
-                <div>Home</div>
-                <div>About</div>
-                <div>Reservation</div>
-                <div>Our Menu</div>
-                <div>Our Blog</div>
-                <div>Contact Us</div>
-                <div><i class="fa-solid fa-magnifying-glass" style="color: #84b813;"></i></div>
-            </div>
-
         </div>
-
-        <!-- header content -->
-        <div class="header-content-row">
-
-            <div class="contact-icon">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="header-txt-container">
-                <div class="header-txt">
-                    <p class="m-t txt-anime">We Use the world best ingredient</p>
-                    <p class="h-t food-z popAnime "></p>
-                    <p class="zone-txt anime-btn"> This is Photoshop's version of Lorem Ipsum. Poroin gravida nibh vel
-                        velit
-                        auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                        nibh id
-                        elit.
-                    </p>
-                    <button class=" anime-btn order-btn">Order Now</button>
-
-                </div>
-            </div>
-
+        <div class="navlink t" id="a">
+            <p class="back" onclick="hideNavbar()">×</p>
+            <div>Home</div>
+            <div>About</div>
+            <div>Reservation</div>
+            <div>Our Menu</div>
+            <div>Our Blog</div>
+            <div>Contact Us</div>
+            <div><i class="fa-solid fa-magnifying-glass" style="color: #84b813;"></i></div>
         </div>
 
     </div>
 
-    <!-- over-lap row -->
-    <div class="overlap-row">
+    <!-- main content container -->
+    <div class="main">
 
-        <!-- item-1 -->
-        <div class="overlap-item">
-            <div class="front">
-                <i class="fa-solid fa-utensils"></i>
-                <p class="overlap-txt-1 m-t">We are food lovers</p>
-                <p class="t">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                    Aenean sollicitudin, lorem quis bibendum auctor.Aenean sollicitydin-<sollicitudin-></sollicitudin->
-                </p>
-            </div>
-            <div class="back-view">
-                <i class="fa-solid fa-utensils" style="color: #e02f46;"></i>
-                <p class="overlap-txt-1 m-t">We are food lovers</p>
-                <p class="t" style="color:rgb(57, 57, 57)">This is Photoshop's version of Lorem Ipsum. Proin gravida
-                    nibh vel velit auctor aliquet.
-                    Aenean sollicitudin, lorem quis bibendum auctor.Aenean sollicitydin-<sollicitudin-></sollicitudin->
-                </p>
-            </div>
-        </div>
+        <div style="height: 100vh;">
+            <!-- header content -->
+            <div class="header">
+                <div class="header-content-row">
 
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="header-txt-container">
+                        <div class="header-txt">
+                            <p class="m-t txt-anime">We Use the world best ingredient</p>
+                            <p class="h-t food-z popAnime "></p>
+                            <input type="text" placeholder="Order Here" class="order-input">
 
-        <!-- item-2 -->
-        <div class="overlap-item" style="background-color: #84b813;">
-            <div class="front">
-                <i class="fa-solid fa-burger"></i>
-                <p class="overlap-txt-1 m-t">Diversity in food</p>
-                <p class="t">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                    Aenean sollicitudin, lorem quis bibendum auctor.Aenean sollicitydin-<sollicitudin-></sollicitudin->
-                </p>
-            </div>
-            <div class="back-view">
-                <i class="fa-solid fa-burger" style="color:#84b813"></i>
-                <p class="overlap-txt-1 m-t">Diversity in food</p>
-                <p class="t" style="color: rgb(57, 57, 57);">This is Photoshop's version of Lorem Ipsum. Proin gravida
-                    nibh vel velit auctor aliquet.
-                    Aenean sollicitudin, lorem quis bibendum auctor.Aenean sollicitydin-<sollicitudin-></sollicitudin->
-                </p>
-            </div>
-        </div>
+                            <p class="zone-txt anime-btn"> This is Photoshop's version of Lorem Ipsum. Poroin gravida
+                                nibh
+                                vel
+                                velit
+                                auctor aliquet.
+                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                                sem
+                                nibh id
+                                elit.
+                            </p>
+                            <span> <button class=" anime-btn order-btn">Order Now</button>
+                                <button class=" anime-btn order-btn"> Cancel</button></span>
 
-        <!-- item-3 -->
-        <div class="overlap-item r-class" style="background-color: rgb(39, 37, 37);">
-            <div class="fron">
-                <i class="fa-solid fa-stopwatch" style="font-size: 30px;"></i>
-                <p class="overlap-txt-1 m-t">Opening Hours</p>
-                <div class="t">
-                    <p>Monday- Friday <span style="color: #3fff00;">_______</span> 04.00-08.00</p>
-                    <p style="    margin: 14px 0px;">Monday- Friday <span style="color: #3fff00;">_______</span>
-                        04.00-08.00</p>
-                    <p>Monday- Friday <span style="color: #3fff00;">_______</span> 04.00-08.00</p>
-                </div>
-            </div>
-
-            <div class="back-view">
-                <i class="fa-solid fa-stopwatch"></i>
-                <p class="overlap-txt-1 m-t">Opening Hours</p>
-                <div class="t">
-                    <p style="color: rgb(57, 57, 57);">Monday- Friday <span style="color: #3fff00;">_______</span>
-                        04.00-08.00</p>
-                    <p style="  color: rgb(57, 57, 57);  margin: 14px 0px;">Monday- Friday <span
-                            style="color: #3fff00;">_______</span>
-                        04.00-08.00</p>
-                    <p style="color: rgb(57, 57, 57);">Monday- Friday <span style="color: #3fff00;">_______</span>
-                        04.00-08.00</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- good and healthy life-row -->
-    <div class="healthy-life-row">
-
-        <div class="healthy-life">
-
-            <div class="healthy-left">
-                <p class="m-t healthy-life-heading-1 ">Good And Healthy Life</p>
-                <p class="h-t healthy-life-heading-2">We Served The Best <span class="h-t"
-                        style="color: #84b813; ">Food</span> In Town</p>
-            </div>
-
-            <div class=" healthy-right t-b">
-                <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae
-                    diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed
-                    mi finibus, vel tristique risus faucibus.</p>
-                <br>
-                <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae
-                    diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus..</p>
-            </div>
-
-        </div>
-
-
-    </div>
-
-    <!-- % bar  -->
-    <div class="bar-row">
-        <div class="bar-container">
-
-            <!--% bar-1 -->
-            <div class="mybar">
-                <div class="skill">
-
-                    <div class="Lbar" style="width: 88%; display: flex; justify-content: space-between;">
-                        <div> Fresh & Origanic </div>
-                        <div class="t-b">88%</div>
+                        </div>
                     </div>
 
                 </div>
-                <div class="skill">
-                    <div class="Lbar" style="background-color: #84b813; width: 88%;"></div>
-                    <div class="Rbar" style="width: 12%;"></div>
-                </div>
 
             </div>
-
-            <!--% bar-2 -->
-            <div class="mybar">
-                <div class="skill">
-
-                    <div class="Lbar" style="width: 85%; display: flex; justify-content: space-between;">
-                        <div> Professional Staff </div>
-                        <div class="t-b">85%</div>
-                    </div>
-
-                </div>
-                <div class="skill">
-                    <div class="Lbar" style="background-color: #e02f46; width: 85%;"></div>
-                    <div class="Rbar" style="width: 15%;"></div>
-                </div>
-
-            </div>
-
-            <!--% bar-3 -->
-            <div class="mybar">
-                <div class="skill">
-
-                    <div class="Lbar" style="width: 85%; display: flex; justify-content: space-between;">
-                        <div> Easy Reservation </div>
-                        <div class="t-b">78%</div>
-                    </div>
-
-                </div>
-                <div class="skill">
-                    <div class="Lbar" style="background-color: #e02f46; width: 78%;"></div>
-                    <div class="Rbar" style="width: 22%;"></div>
-                </div>
-
-            </div>
-
-            <!--% bar-4 -->
-            <div class="mybar">
-                <div class="skill">
-
-                    <div class="Lbar" style="width: 90%; display: flex; justify-content: space-between;">
-                        <div> 24/7 food Delivery </div>
-                        <div class="t-b">90%</div>
-                    </div>
-
-                </div>
-                <div class="skill">
-                    <div class="Lbar" style="background-color: #84b813; width: 90%;"></div>
-                    <div class="Rbar" style="width: 10%;"></div>
-                </div>
-
-            </div>
-
-            <!--% bar-5 -->
-            <div class="mybar">
-                <div class="skill">
-
-                    <div class="Lbar" style="width: 94%; display: flex; justify-content: space-between;">
-                        <div> Quality Cuisine </div>
-                        <div class="t-b">94%</div>
-                    </div>
-
-                </div>
-                <div class="skill">
-                    <div class="Lbar" style="background-color: #84b813; width: 94%;"></div>
-                    <div class="Rbar" style="width: 6%;"></div>
-                </div>
-
-            </div>
-
         </div>
 
-    </div>
+        <!-- over-lap row -->
+        <div class="overlap-row">
 
-    <!-- book your table -->
-    <div class="book-table-row">
-
-        <div class="booking">
-            <h3 class="booking-h3">Book Your Table</h3>
-            <p style="font-size: 13px; margin-top: 43px;">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-                vel velit auctor
-                aliquet. Aenean
-                sollicitudin, lorem quis bibendum auctor.</p>
-
-            <p id="booked"></p>
-
-            <div class="booking-input">
-
-                <input type="text" id="name" placeholder="Name" class="b-input">
-                <input type="text" placeholder="Email" class="b-input">
-                <input type="text" placeholder="Reservation Date:
-                " class="b-input">
-                <input type="text" placeholder="Total People" class="b-input">
-            </div>
-
-            <div class="message-txt">
-                <textarea name="userMessage" placeholder="Message:" class="b-input"
-                    style="width: 91%; height: 100px;"></textarea>
-            </div>
-            <button id="book-btn" class="order-btn" style="margin: 0px;">SUBMIT</button>
-
-        </div>
-
-    </div>
-
-    <!-- specialties-row -->
-    <div class="specialties-row">
-        <div class="specialties-tital">
-            <h5 class="m-t healthy-life-heading-1 ">We Are Professionals</h5>
-            <h3 class="h-t healthy-life-heading-2">Our Specialties</h3>
-        </div>
-        <div class="specialties">
-            <!-- 1 -->
-            <div class="our-spe">
-                <div class="spe-icon">
+            <!-- item-1 -->
+            <div class="overlap-item">
+                <div class="front">
                     <i class="fa-solid fa-utensils"></i>
+                    <p class="overlap-txt-1 m-t">We are food lovers</p>
+                    <p class="t">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                        aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor.Aenean
+                        sollicitydin-<sollicitudin-></sollicitudin->
+                    </p>
                 </div>
-                <div class="spe-txt">
-                    <h4>Cutlery</h4>
-                    <p class="t-b">
-                        Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
-                </div>
-            </div>
-
-            <!-- 2 -->
-            <div class="our-spe">
-                <div class="spe-icon" style="background-color:  #e02f46;">
-                    <i class="fa-solid fa-cake-candles"></i>
-                </div>
-                <div class="spe-txt">
-                    <h4>Cake</h4>
-                    <p class="t-b">
-                        Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
-                </div>
-            </div>
-
-            <!-- 3 -->
-            <div class="our-spe">
-                <div class="spe-icon">
-                    <i class="fa-solid fa-bell-concierge"></i>
-                </div>
-                <div class="spe-txt">
-                    <h4>Services</h4>
-                    <p class="t-b">
-                        Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
-                </div>
-            </div>
-
-            <!-- 4 -->
-            <div class="our-spe">
-                <div class="spe-icon" style="background-color:  #e02f46;">
-                    <i class="fa-solid fa-pizza-slice"></i>
-                </div>
-                <div class="spe-txt">
-                    <h4>Pizza</h4>
-                    <p class="t-b">
-                        Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
-                </div>
-            </div>
-
-            <!-- 5 -->
-            <div class="our-spe">
-                <div class="spe-icon">
-                    <i class="fa-solid fa-mug-hot"></i>
-                </div>
-                <div class="spe-txt">
-                    <h4>Tea & Coffee
-                    </h4>
-                    <p class="t-b">
-                        Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
+                <div class="back-view">
+                    <i class="fa-solid fa-utensils" style="color: #e02f46;"></i>
+                    <p class="overlap-txt-1 m-t">We are food lovers</p>
+                    <p class="t" style="color:rgb(57, 57, 57)">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                        nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor.Aenean
+                        sollicitydin-<sollicitudin-></sollicitudin->
+                    </p>
                 </div>
             </div>
 
 
-            <!-- 6 -->
-            <div class="our-spe">
-                <div class="spe-icon" style="background-color:  #e02f46;">
-                    <i class="fa-solid fa-wine-glass-empty"></i>
+            <!-- item-2 -->
+            <div class="overlap-item" style="background-color: #84b813;">
+                <div class="front">
+                    <i class="fa-solid fa-burger"></i>
+                    <p class="overlap-txt-1 m-t">Diversity in food</p>
+                    <p class="t">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                        aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor.Aenean
+                        sollicitydin-<sollicitudin-></sollicitudin->
+                    </p>
                 </div>
-                <div class="spe-txt">
-                    <h4>Fresh Juices</h4>
-                    <p class="t-b">
-                        Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
+                <div class="back-view">
+                    <i class="fa-solid fa-burger" style="color:#84b813"></i>
+                    <p class="overlap-txt-1 m-t">Diversity in food</p>
+                    <p class="t" style="color: rgb(57, 57, 57);">This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida
+                        nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor.Aenean
+                        sollicitydin-<sollicitudin-></sollicitudin->
+                    </p>
+                </div>
+            </div>
+
+            <!-- item-3 -->
+            <div class="overlap-item r-class" style="background-color: rgb(39, 37, 37);">
+                <div class="fron">
+                    <i class="fa-solid fa-stopwatch" style="font-size: 30px;"></i>
+                    <p class="overlap-txt-1 m-t">Opening Hours</p>
+                    <div class="t">
+                        <p>Monday- Friday <span style="color: #3fff00;">_______</span> 04.00-08.00</p>
+                        <p style="    margin: 14px 0px;">Monday- Friday <span style="color: #3fff00;">_______</span>
+                            04.00-08.00</p>
+                        <p>Monday- Friday <span style="color: #3fff00;">_______</span> 04.00-08.00</p>
+                    </div>
+                </div>
+
+                <div class="back-view">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <p class="overlap-txt-1 m-t">Opening Hours</p>
+                    <div class="t">
+                        <p style="color: rgb(57, 57, 57);">Monday- Friday <span style="color: #3fff00;">_______</span>
+                            04.00-08.00</p>
+                        <p style="  color: rgb(57, 57, 57);  margin: 14px 0px;">Monday- Friday <span
+                                style="color: #3fff00;">_______</span>
+                            04.00-08.00</p>
+                        <p style="color: rgb(57, 57, 57);">Monday- Friday <span style="color: #3fff00;">_______</span>
+                            04.00-08.00</p>
+                    </div>
                 </div>
             </div>
 
         </div>
-    </div>
 
-    <!-- counter -->
-    <div class="counter-row" id="onscroll">
-        <div class="counter">
+        <!-- good and healthy life-row -->
+        <div class="healthy-life-row ">
 
-            <!-- 1 -->
-            <div class="count">
-                <p class="digit">0</p>
-                <div class="h-l"></div>
-                <p class="f-500">Happy Clients</p>
+            <div class="healthy-life">
+
+                <div class="healthy-left">
+                    <p class="m-t healthy-life-heading-1 ">Good And Healthy Life</p>
+                    <p class="h-t healthy-life-heading-2">We Served The Best <span class="h-t"
+                            style="color: #84b813; ">Food</span> In Town</p>
+                </div>
+
+                <div class=" healthy-right t-b">
+                    <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
+                        vitae
+                        diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo
+                        sed
+                        mi finibus, vel tristique risus faucibus.
+                        Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
+                        vitae
+                        diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo
+                        sed
+                        mi finibus, vel tristique risus faucibus.
+                        Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
+                        vitae
+                        diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo
+                        sed
+                        mi finibus, vel tristique risus faucibus.
+                        Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
+                        vitae
+                        diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo
+                        sed
+                        mi finibus, vel tristique risus faucibus. vitae
+                        diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo
+                        sed
+                        mi finibus, vel tristique risus faucibus.
+                        Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
+                        vitae
+                        diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo
+                        sed
+                        mi finibus, vel tristique risus faucibus.
+                        Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
+                        vitae
+                        diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo
+                        sed
+                        mi finibus, vel tristique risus faucibus.
+                        Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
+                        vitae
+                        diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo
+                        sed</p>
+                    <br>
+                    <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
+                        vitae
+                        diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus..</p>
+                </div>
+
             </div>
 
-            <!-- 2 -->
-            <div class="count">
-                <p class="digit">0</p>
-                <div class="h-l"></div>
-                <p class="f-500">Cooked Items</p>
+
+        </div>
+
+        <!-- % bar  -->
+        <div class="bar-row">
+            <div class="bar-container">
+
+                <!--% bar-1 -->
+                <div class="mybar">
+                    <div class="skill">
+
+                        <div class="Lbar" style="width: 88%; display: flex; justify-content: space-between;">
+                            <div> Fresh & Origanic </div>
+                            <div class="t-b">88%</div>
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <div class="Lbar" style="background-color: #84b813; width: 88%;"></div>
+                        <div class="Rbar" style="width: 12%;"></div>
+                    </div>
+
+                </div>
+
+                <!--% bar-2 -->
+                <div class="mybar">
+                    <div class="skill">
+
+                        <div class="Lbar" style="width: 85%; display: flex; justify-content: space-between;">
+                            <div> Professional Staff </div>
+                            <div class="t-b">85%</div>
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <div class="Lbar" style="background-color: #e02f46; width: 85%;"></div>
+                        <div class="Rbar" style="width: 15%;"></div>
+                    </div>
+
+                </div>
+
+                <!--% bar-3 -->
+                <div class="mybar">
+                    <div class="skill">
+
+                        <div class="Lbar" style="width: 85%; display: flex; justify-content: space-between;">
+                            <div> Easy Reservation </div>
+                            <div class="t-b">78%</div>
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <div class="Lbar" style="background-color: #e02f46; width: 78%;"></div>
+                        <div class="Rbar" style="width: 22%;"></div>
+                    </div>
+
+                </div>
+
+                <!--% bar-4 -->
+                <div class="mybar">
+                    <div class="skill">
+
+                        <div class="Lbar" style="width: 90%; display: flex; justify-content: space-between;">
+                            <div> 24/7 food Delivery </div>
+                            <div class="t-b">90%</div>
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <div class="Lbar" style="background-color: #84b813; width: 90%;"></div>
+                        <div class="Rbar" style="width: 10%;"></div>
+                    </div>
+
+                </div>
+
+                <!--% bar-5 -->
+                <div class="mybar">
+                    <div class="skill">
+
+                        <div class="Lbar" style="width: 94%; display: flex; justify-content: space-between;">
+                            <div> Quality Cuisine </div>
+                            <div class="t-b">94%</div>
+                        </div>
+
+                    </div>
+                    <div class="skill">
+                        <div class="Lbar" style="background-color: #84b813; width: 94%;"></div>
+                        <div class="Rbar" style="width: 6%;"></div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <!-- 3 -->
-            <div class="count">
-                <p class="digit">0</p>
-                <div class="h-l"></div>
-                <p class="f-500">Food Delivery</p>
+        </div>
+
+        <!-- book your table -->
+        <div class="book-table-row">
+
+            <div class="booking">
+                <h3 class="booking-h3">Book Your Table</h3>
+                <p style="font-size: 13px; margin-top: 43px;">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                    nibh
+                    vel velit auctor
+                    aliquet. Aenean
+                    sollicitudin, lorem quis bibendum auctor.</p>
+
+                <p id="booked"></p>
+
+                <div class="booking-input">
+
+                    <input type="text" id="name" placeholder="Name" class="b-input">
+                    <input type="text" placeholder="Email" class="b-input">
+                    <input type="text" placeholder="Reservation Date:
+                " class="b-input">
+                    <input type="text" placeholder="Total People" class="b-input">
+                </div>
+
+                <div class="message-txt">
+                    <textarea name="userMessage" placeholder="Message:" class="b-input"
+                        style="width: 91%; height: 100px;"></textarea>
+                </div>
+                <button id="book-btn" class="order-btn" style="margin: 0px;">SUBMIT</button>
+
             </div>
 
-            <!-- 4 -->
-            <div class="count">
-                <p class="digit">0</p>
-                <div class="h-l"></div>
-                <p class="f-500">Cups Of Coffee</p>
+        </div>
+
+        <!-- secound nav bar -->
+        <nav class="navbar-2">
+            <ul>
+                <li><a href="#">Specialties</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Customer</a></li>
+                <li><a href="#">Review</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- specialties-row -->
+        <div class="specialties-row">
+            <div class="specialties-tital">
+                <h5 class="m-t healthy-life-heading-1 ">We Are Professionals</h5>
+                <h3 class="h-t healthy-life-heading-2">Our Specialties</h3>
+            </div>
+            <div class="specialties">
+                <!-- 1 -->
+                <div class="our-spe">
+                    <div class="spe-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="spe-txt">
+                        <h4>Cutlery</h4>
+                        <p class="t-b">
+                            Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="our-spe">
+                    <div class="spe-icon" style="background-color:  #e02f46;">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <div class="spe-txt">
+                        <h4>Cake</h4>
+                        <p class="t-b">
+                            Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="our-spe">
+                    <div class="spe-icon">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                    </div>
+                    <div class="spe-txt">
+                        <h4>Services</h4>
+                        <p class="t-b">
+                            Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="our-spe">
+                    <div class="spe-icon" style="background-color:  #e02f46;">
+                        <i class="fa-solid fa-pizza-slice"></i>
+                    </div>
+                    <div class="spe-txt">
+                        <h4>Pizza</h4>
+                        <p class="t-b">
+                            Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="our-spe">
+                    <div class="spe-icon">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <div class="spe-txt">
+                        <h4>Tea & Coffee
+                        </h4>
+                        <p class="t-b">
+                            Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
+                    </div>
+                </div>
+
+
+                <!-- 6 -->
+                <div class="our-spe">
+                    <div class="spe-icon" style="background-color:  #e02f46;">
+                        <i class="fa-solid fa-wine-glass-empty"></i>
+                    </div>
+                    <div class="spe-txt">
+                        <h4>Fresh Juices</h4>
+                        <p class="t-b">
+                            Phasellus eu scelerisque ligula. Pellentesque sollicitudin quis orci laoreet vehicula.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
 
-    <!-- our manu-row -->
-    <div class="manu-row">
-        <div class="manu-title">
-            <h3 class="h-t healthy-life-heading-2">Our Menu</h3>
+        <!-- counter -->
+        <div class="counter-row" id="onscroll">
+            <div class="counter">
 
-            <p class="t-b manu-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in
-                velit dolor. Vivamus gravida, neque nec interdum cursus, erat ligula.</p>
+                <!-- 1 -->
+                <div class="count">
+                    <p class="digit">0</p>
+                    <div class="h-l"></div>
+                    <p class="f-500">Happy Clients</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="count">
+                    <p class="digit">0</p>
+                    <div class="h-l"></div>
+                    <p class="f-500">Cooked Items</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="count">
+                    <p class="digit">0</p>
+                    <div class="h-l"></div>
+                    <p class="f-500">Food Delivery</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="count">
+                    <p class="digit">0</p>
+                    <div class="h-l"></div>
+                    <p class="f-500">Cups Of Coffee</p>
+                </div>
+            </div>
         </div>
 
-        <div class="manu-bar">
-            <div>All</div>
-            <div>Breakfast</div>
-            <div>Lunch</div>
-            <div>Dinner</div>
-            <div>Desserts</div>
-        </div>
+        <!-- our manu-row -->
+        <div class="manu-row">
+            <div class="manu-title">
+                <h3 class="h-t healthy-life-heading-2">Our Menu</h3>
 
-        <div class="food-img-container">
-            <div class="parent">
-                <div class="manu-clon"></div>
+                <p class="t-b manu-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in
+                    velit dolor. Vivamus gravida, neque nec interdum cursus, erat ligula.</p>
+            </div>
+
+            <div class="manu-bar">
+                <div>All</div>
+                <div>Breakfast</div>
+                <div>Lunch</div>
+                <div>Dinner</div>
+                <div>Desserts</div>
+            </div>
+
+            <div class="food-img-container">
+
                 <img class="lunch" src="https://megaone.acrothemes.com/restaurant/img/portfolio-1.jpg" alt="img-1">
+
+
+                <img src="https://megaone.acrothemes.com/restaurant/img/portfolio-5.jpg" alt="img-2">
+
+                <img src="https://megaone.acrothemes.com/restaurant/img/portfolio-6.jpg" alt="img-3">
+
+                <img src="https://megaone.acrothemes.com/restaurant/img/portfolio-4.jpg" alt="img-4">
+
+                <img src="https://megaone.acrothemes.com/restaurant/img/portfolio-3.jpg" alt="img-5">
+
+                <img src="https://megaone.acrothemes.com/restaurant/img/portfolio-3.jpg" alt="img-6">
+
             </div>
-            <img src="https://megaone.acrothemes.com/restaurant/img/portfolio-5.jpg" alt="img-2">
-            <img src="https://megaone.acrothemes.com/restaurant/img/portfolio-6.jpg" alt="img-3">
-            <img src="https://megaone.acrothemes.com/restaurant/img/portfolio-4.jpg" alt="img-4">
-            <img src="https://megaone.acrothemes.com/restaurant/img/portfolio-3.jpg" alt="img-5">
-            <img src="https://megaone.acrothemes.com/restaurant/img/portfolio-3.jpg" alt="img-6">
+
         </div>
 
-    </div>
+        <!-- Happy customer -->
+        <div class="customer-row">
+            <div class="customer-title">
+                <h4 class="h-t healthy-life-heading-2" style="color: white;">
+                    Happy Customer
+                </h4>
+                <p class="t manu-txt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
+                    Vivamus gravida, neque nec interdum cursus, erat ligula.</p>
+            </div>
 
-    <!-- Happy customer -->
-    <div class="customer-row">
-        <div class="customer-title">
-            <h4 class="h-t healthy-life-heading-2" style="color: white;">
-                Happy Customer
-            </h4>
-            <p class="t manu-txt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
-                Vivamus gravida, neque nec interdum cursus, erat ligula.</p>
-        </div>
+            <div class="reviews">
+                <!-- 1 -->
+                <div class="review">
+                    <div class="review-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <p class="t-b">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
+                        Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.
 
-        <div class="reviews">
-            <!-- 1 -->
-            <div class="review">
-                <div class="review-icon">
-                    <i class="fa-solid fa-quote-left"></i>
+                    </p>
+
+                    <div class="info-card ">
+                        <img src="https://megaone.acrothemes.com/restaurant/img/testimonial-2.png" alt="">
+                        <h5 class="h-t review-p-n">Jessica Brian</h5>
+                        <p class="h-t review-p-location"> Florida, USA</p>
+                    </div>
                 </div>
-                <p class="t-b">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
-                    Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.
 
-                </p>
+                <!-- 2 -->
+                <div class="review" style=" margin: 0px 30px;">
+                    <div class="review-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <p class="t-b">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
+                        Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.
 
-                <div class="info-card ">
-                    <img src="https://megaone.acrothemes.com/restaurant/img/testimonial-2.png" alt="">
-                    <h5 class="h-t review-p-n">Jessica Brian</h5>
-                    <p class="h-t review-p-location"> Florida, USA</p>
+                    </p>
+
+                    <div class="info-card ">
+                        <img src="https://megaone.acrothemes.com/restaurant/img/testimonial-3.png" alt="">
+                        <h5 class="h-t review-p-n">Albert Joseph</h5>
+                        <p class="h-t review-p-location"> London, USA</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="review">
+                    <div class="review-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <p class="t-b">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
+                        Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.
+
+                    </p>
+
+                    <div class="info-card ">
+                        <img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="">
+                        <h5 class="h-t review-p-n">David Gover</h5>
+                        <p class="h-t review-p-location"> Newyork, USA</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- blog -->
+        <div class="blog-row">
+
+            <!-- 1 -->
+            <div class="blog">
+                <div class="blog-img">
+                    <img src="https://megaone.acrothemes.com/restaurant/img/blog-image4.jpg" alt="">
+                </div>
+
+                <div class="blog-txt-box">
+                    <h4 class="h-t blog-title">Full of Spices & Taste</h4>
+
+                    <p class="t-b l-gap ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit
+                        dolor.
+                        Vivamus
+                        gravida, neque nec interdum cursus, erat ligula. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit.</p>
+
+                    <button class="blog-btn">LEARN MORE</button>
                 </div>
             </div>
 
             <!-- 2 -->
-            <div class="review" style=" margin: 0px 30px;">
-                <div class="review-icon">
-                    <i class="fa-solid fa-quote-left"></i>
+            <div class="blog blog-2">
+                <div class="blog-img">
+                    <img src="https://megaone.acrothemes.com/restaurant/img/blog-image4.jpg" alt="">
                 </div>
-                <p class="t-b">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
-                    Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.
 
-                </p>
+                <div class="blog-txt-box b-box-2">
+                    <h4 class="h-t blog-title">Full of Spices & Taste</h4>
 
-                <div class="info-card ">
-                    <img src="https://megaone.acrothemes.com/restaurant/img/testimonial-3.png" alt="">
-                    <h5 class="h-t review-p-n">Albert Joseph</h5>
-                    <p class="h-t review-p-location"> London, USA</p>
-                </div>
-            </div>
+                    <p class="t-b l-gap ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit
+                        dolor.
+                        Vivamus
+                        gravida, neque nec interdum cursus, erat ligula. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit.</p>
 
-            <!-- 3 -->
-            <div class="review">
-                <div class="review-icon">
-                    <i class="fa-solid fa-quote-left"></i>
-                </div>
-                <p class="t-b">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
-                    Vivamus gravida, neque nec interdum cursus, erat ligula porta nibh.
-
-                </p>
-
-                <div class="info-card ">
-                    <img src="https://megaone.acrothemes.com/restaurant/img/testimonial-1.png" alt="">
-                    <h5 class="h-t review-p-n">David Gover</h5>
-                    <p class="h-t review-p-location"> Newyork, USA</p>
+                    <button class="blog-btn" style="background-color: #e02f46;">LEARN MORE</button>
                 </div>
             </div>
+
         </div>
-
-    </div>
-
-    <!-- blog -->
-    <div class="blog-row">
-
-        <!-- 1 -->
-        <div class="blog">
-            <div class="blog-img">
-                <img src="https://megaone.acrothemes.com/restaurant/img/blog-image4.jpg" alt="">
-            </div>
-
-            <div class="blog-txt-box">
-                <h4 class="h-t blog-title">Full of Spices & Taste</h4>
-
-                <p class="t-b l-gap ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
-                    Vivamus
-                    gravida, neque nec interdum cursus, erat ligula. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.</p>
-
-                <button class="blog-btn">LEARN MORE</button>
-            </div>
-        </div>
-
-        <!-- 2 -->
-        <div class="blog blog-2">
-            <div class="blog-img">
-                <img src="https://megaone.acrothemes.com/restaurant/img/blog-image4.jpg" alt="">
-            </div>
-
-            <div class="blog-txt-box b-box-2">
-                <h4 class="h-t blog-title">Full of Spices & Taste</h4>
-
-                <p class="t-b l-gap ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
-                    Vivamus
-                    gravida, neque nec interdum cursus, erat ligula. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.</p>
-
-                <button class="blog-btn" style="background-color: #e02f46;">LEARN MORE</button>
-            </div>
-        </div>
-
     </div>
 
     <!-- footer -->

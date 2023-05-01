@@ -9,7 +9,7 @@ function hideNavbar() {
   if (window.innerWidth > 1024) {
     document.getElementsByClassName("burger")[0].style.display = "none";
   }
-  console.log(window.innerWidth);
+  // console.log(window.innerWidth);
 }
 
 //form-booking
@@ -19,7 +19,7 @@ document.getElementById("book-btn").addEventListener("click", myFunction);
 let myname = document.getElementById("name");
 function myFunction() {
   if (myname.value != "") {
-    console.log(myname.value)
+    // console.log(myname.value)
     document.getElementById("booked").innerHTML = "Hi " + myname.value + " Thanks for contacting us.";
     document.getElementById("booked").style.background = "#bee4c3";
   }
@@ -36,7 +36,7 @@ function myFunction() {
 
 setTimeout(
 
-  popletter("Delicious Food Zone"), 5000);
+  function () { popletter("Delicious Food Zone"); }, 1000);
 
 
 function popletter(text) {
@@ -57,20 +57,11 @@ function popletter(text) {
 
 
 //counter animation
-// var s = 0;
-// window.addEventListener('scroll', function () {
-//   s = window.pageYOffset;
-//   console.log(s);
-//   if (window.pageYOffset > 2800) {
-//     startcount();
-//   }
-// });
 
 function runOnScrollWhenElementInViewport(element, callback) {
   function checkIfElementInViewport() {
     const elementPosition = element.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
-console.log();
     if (elementPosition.top >= 0 && elementPosition.bottom <= viewportHeight) {
       callback();
       window.removeEventListener('scroll', checkIfElementInViewport);
@@ -78,7 +69,7 @@ console.log();
   }
 
   window.addEventListener('scroll', checkIfElementInViewport);
-  
+
 }
 
 const rowcount = document.getElementById('onscroll');
@@ -118,5 +109,84 @@ function startcount() {
     }
   }
 }
+
+//Adding class to navbar
+
+
+const nav = document.querySelector(".navbar");
+const banner = document.querySelector(".header");
+const navLink =document.getElementsByClassName("navlink")
+window.addEventListener("scroll", navClass);
+
+function navClass() {
+  let parentPos = banner.getBoundingClientRect();
+  //console.log(parentPos.bottom);
+  if (parentPos.bottom <= 0) {
+     nav.classList.add("navColor");
+     navLink[0].style.color="black";
+  } else {
+    navLink[0].style.removeProperty("color");
+    nav.classList.remove("navColor");
+  }
+}
+
+
+// //text fixed
+// // const mytext = document.querySelector(".healthy-life");
+
+// // window.addEventListener("scroll", txtfixed);
+
+// // function txtfixed() {
+// //   let parentPos = mytext.getBoundingClientRect();
+  
+// //   if (parentPos.bottom <= 240) {
+// //     mytext.style.position = 'fixed';
+// //     mytext.style.top = '0px';
+// //     mytext.style.width = '100%';
+// //     console.log(parentPos.bottom +"inside if");
+// //   } 
+// //   else {
+// //     console.log(parentPos.bottom +"inside else");
+// //     mytext.style.position = "static";
+    
+// //   }
+// // }
+
+
+
+// const mytext = document.querySelector(".healthy-life-row");
+// const mytext2 = document.querySelector(".healthy-right");
+// window.addEventListener("scroll", txtfixed);
+
+// function txtfixed() {
+//   let parentPos = mytext.getBoundingClientRect();
+  
+//   if (parentPos.bottom < 240) {
+//     mytext.style.position = 'sticky';
+//     mytext.style.top = '120px';
+//     mytext.style.width = '100%';
+//     mytext2.style.display = 'none'
+//    // document.body.style.paddingTop = `${mytext.offsetHeight}px`;
+//     //console.log(parentPos.bottom +"inside if");
+//   } 
+//   if(parentPos.bottom > 240) {
+//    // console.log(parentPos.bottom +"inside else");
+//   // mytext2.style.display = 'flex'
+    
+//   }
+// }
+
+// window.addEventListener("scroll", txtfixed2);
+
+// function txtfixed2() {
+//   let parentPos = mytext.getBoundingClientRect();
+  
+//   if(parentPos.bottom > 240) {
+//     console.log(parentPos.bottom +"inside else");
+//   mytext2.style.display = 'flex'
+    
+//   }
+// }
+
 
 
