@@ -115,15 +115,15 @@ function startcount() {
 
 const nav = document.querySelector(".navbar");
 const banner = document.querySelector(".header");
-const navLink =document.getElementsByClassName("navlink")
+const navLink = document.getElementsByClassName("navlink")
 window.addEventListener("scroll", navClass);
 
 function navClass() {
   let parentPos = banner.getBoundingClientRect();
   //console.log(parentPos.bottom);
   if (parentPos.bottom <= 0) {
-     nav.classList.add("navColor");
-     navLink[0].style.color="black";
+    nav.classList.add("navColor");
+    navLink[0].style.color = "black";
   } else {
     navLink[0].style.removeProperty("color");
     nav.classList.remove("navColor");
@@ -131,62 +131,8 @@ function navClass() {
 }
 
 
-// //text fixed
-// // const mytext = document.querySelector(".healthy-life");
-
-// // window.addEventListener("scroll", txtfixed);
-
-// // function txtfixed() {
-// //   let parentPos = mytext.getBoundingClientRect();
-  
-// //   if (parentPos.bottom <= 240) {
-// //     mytext.style.position = 'fixed';
-// //     mytext.style.top = '0px';
-// //     mytext.style.width = '100%';
-// //     console.log(parentPos.bottom +"inside if");
-// //   } 
-// //   else {
-// //     console.log(parentPos.bottom +"inside else");
-// //     mytext.style.position = "static";
-    
-// //   }
-// // }
 
 
-
-// const mytext = document.querySelector(".healthy-life-row");
-// const mytext2 = document.querySelector(".healthy-right");
-// window.addEventListener("scroll", txtfixed);
-
-// function txtfixed() {
-//   let parentPos = mytext.getBoundingClientRect();
-  
-//   if (parentPos.bottom < 240) {
-//     mytext.style.position = 'sticky';
-//     mytext.style.top = '120px';
-//     mytext.style.width = '100%';
-//     mytext2.style.display = 'none'
-//    // document.body.style.paddingTop = `${mytext.offsetHeight}px`;
-//     //console.log(parentPos.bottom +"inside if");
-//   } 
-//   if(parentPos.bottom > 240) {
-//    // console.log(parentPos.bottom +"inside else");
-//   // mytext2.style.display = 'flex'
-    
-//   }
-// }
-
-// window.addEventListener("scroll", txtfixed2);
-
-// function txtfixed2() {
-//   let parentPos = mytext.getBoundingClientRect();
-  
-//   if(parentPos.bottom > 240) {
-//     console.log(parentPos.bottom +"inside else");
-//   mytext2.style.display = 'flex'
-    
-//   }
-// }
 
 
 

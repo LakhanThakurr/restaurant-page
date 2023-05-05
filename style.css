@@ -18,7 +18,7 @@ html {
 .navbar-2 {
     background-color: #2ecc71;
     position: sticky;
-    top: 110px;
+    top: 105px;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -110,7 +110,7 @@ html {
 }
 
 .header {
-    background-image: url("https://megaone.acrothemes.com/restaurant/img/banner-2.jpg");
+    background-image: url("banner-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -159,6 +159,7 @@ html {
     margin-top: 148px;
     margin-left: 50px;
     margin-right: 50px;
+    width: 100%;
 
 }
 
@@ -821,22 +822,23 @@ textarea::placeholder {
 
 }
 
-
 /* for mobile */
 
-
-@media screen and (width <= 768px) {
+@media screen and (width <=768px) {
 
     input::placeholder {
         color: rgb(255, 255, 255);
     }
 
-    .navbar-2{
+    .navbar-2 {
         display: none;
     }
-    .header-txt-container{
-      
+
+    #booked {
+        width: 83%;
     }
+
+    .header-txt-container {}
 
     .healthy-life-row {
         margin-top: 0px;
@@ -993,6 +995,4 @@ button:hover {
     background: #84b813;
     border: 0px solid;
     border-radius: 30px;
-
-
 }

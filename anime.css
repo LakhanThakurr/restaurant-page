@@ -54,7 +54,7 @@
 
 
 .anime-btn {
-  
+
   animation: showup 5s 1;
   position: relative;
 }
@@ -66,11 +66,11 @@
 
   }
 
-  50%{
+  50% {
     opacity: 0;
   }
 
-  70%{
+  70% {
     opacity: .5;
   }
 
@@ -82,15 +82,15 @@
 
 /* namu animation */
 
-.manu-clon{
+.manu-clon {
   height: 263px;
   width: 366px;
   background-color: #84b813;
   position: absolute;
   opacity: 0;
-  
+
 }
 
- .manu-clon:hover{
-opacity: .7;
+.manu-clon:hover {
+  opacity: .7;
 }
