@@ -724,7 +724,7 @@ textarea::placeholder {
 
 /* responsive for tabview */
 
-@media screen and (max-device-width:1163px) {
+@media screen and (max-device-width: 1163px), (max-width: 1163px) {
 
     .m-t {
         font-size: 21px;
@@ -871,7 +871,7 @@ textarea::placeholder {
 
 /* for mobile */
 
-@media screen and (max-device-width:767px) {
+@media screen and (max-device-width:767px), (max-width:767px) {
 
     input::placeholder {
         color: rgb(255, 255, 255);
