@@ -131,6 +131,23 @@ function navClass() {
 }
 
 
+// getting the value of banner
+
+window.onload = function() {
+  let mybanner = document.getElementById("banner");
+  let header = document.getElementsByClassName("header")[0];
+
+  function setHeaderHeight() {
+    let h = mybanner.getBoundingClientRect().height;
+    header.style.height = h + "px";
+  }
+
+
+  setHeaderHeight();
+
+  window.addEventListener("resize", setHeaderHeight);
+}
+
 
 
 
