@@ -6,12 +6,14 @@
 }
 
 
-html {
+html,
+body {
     height: 100%;
+    position: relative;
 }
 
 .main {
-    min-height: calc(100% - 400px);
+    min-height: calc(100% - 281px);
 }
 
 /* secound navbar */
@@ -246,7 +248,8 @@ html {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
-    margin: 0px 70px;
+
+
 }
 
 .overlap-item {
@@ -688,6 +691,20 @@ textarea::placeholder {
 
     }
 
+    .overlap-row {
+        margin: 0px 10%;
+    }
+
+    .blog {
+        justify-content: space-evenly;
+    }
+
+    .healthy-life {
+        margin: 0px 15%;
+
+    }
+
+
     .food-z {
         font-size: 86px;
         height: auto;
@@ -724,7 +741,7 @@ textarea::placeholder {
 
 /* responsive for tabview */
 
-@media screen and (max-device-width: 1163px), (max-width: 1163px) {
+@media screen and (max-width: 1163px) {
 
     .m-t {
         font-size: 21px;
@@ -792,7 +809,7 @@ textarea::placeholder {
 
 
     .healthy-life {
-        padding: 0px 45px;
+        padding: 0px 45px
     }
 
     .healthy-left {
@@ -871,7 +888,7 @@ textarea::placeholder {
 
 /* for mobile */
 
-@media screen and (max-device-width:767px), (max-width:767px) {
+@media screen and (max-width:767px) {
 
     input::placeholder {
         color: rgb(255, 255, 255);
@@ -1037,6 +1054,37 @@ textarea::placeholder {
         text-align: center;
     }
 }
+
+@media print {
+
+    .header-vid {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .back-view {
+        display: none !important;
+    }
+
+    .healthy-life {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-table-row,
+    .navbar-2,
+    .manu-row,
+    .footer-row {
+        display: none;
+    }
+
+}
+
+
+
 
 /*  */
 button:hover {
